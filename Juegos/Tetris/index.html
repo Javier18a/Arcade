@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        
+        <div class="game-area">
+            <h1>🧱 Tetris</h1>
+            <canvas id="game" width="300" height="450"></canvas>
+            <button onclick="window.location.href='../index.html'" style="margin-top: 30px;">Regresar</button>
+        </div>
+
+        <div class="paneles">
+            <div class="scoreboard">
+                <h2>Tiempo Real</h2>
+                <p>Puntaje: <span id="puntaje">0</span></p>
+                <p>Líneas: <span id="lineas">0</span></p>
+                <p>Nivel: <span id="nivel">1</span></p>
+            </div>
+
+            <div class="records">
+                <h2>Récords</h2>
+                <p>Mejor puntaje: <span id="recordPuntaje">0</span></p>
+                <p>Más líneas: <span id="recordLineas">0</span></p>
+                <p>Mayor nivel: <span id="recordNivel">0</span></p>
+                <button onclick="reiniciar()">Reiniciar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

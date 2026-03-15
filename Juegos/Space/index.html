@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="game-area">
+            <h1>🚀 Space Invaders</h1>
+            <canvas id="game" width="700" height="400"></canvas>
+            <button onclick="window.location.href='../index.html'" style="margin-top: 30px;">Regresar</button>
+        </div>
+        <div class="paneles">
+
+            <div class="real">
+                <h2>Tiempo Real</h2>
+                <p>Puntaje: <span id="puntaje">0</span></p>
+                <p>Eliminados: <span id="kills">0</span></p>
+                <p>Vida: <span id="vida">3</span></p>
+            </div>
+
+            <div class="record">
+                <h2>Récord</h2> 
+                <p>Mejor puntaje: <span id="recordScore">0</span></p>
+                <p>Más eliminados: <span id="recordKills">0</span></p>
+                <button onclick="reiniciar()">Reiniciar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

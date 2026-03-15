@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.game-container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background: rgba(10, 27, 15, .8);
+    border: 3px solid black;
+}
+
+.paneles {
+    display: flex;
+    gap: 20px;
+}
+
+.scoreboard,
+.records {
+    background: rgba(10, 27, 15, .8);
+    border: 1px solid #1e8841;
+    border-radius: 10px;
+    padding: 1.6rem;
+    width: 180px;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+    padding: .55rem .9rem;
+    background: #07a14a;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}

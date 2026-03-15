@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f2a16 0%, #03100b 65%);
+  color: #e8ffe7;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.login-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(8, 21, 13, 0.84);
+  border: 1px solid #1d8f46;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.login-card h2 {
+  margin-bottom: 1.1rem;
+  color: #d9ffdc;
+}
+
+.login-card form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.login-card label {
+  font-size: 0.95rem;
+  color: #b9ffcb;
+}
+
+.login-card input {
+  width: 100%;
+  background: #092312;
+  border: 1px solid #1b8c48;
+  border-radius: 8px;
+  color: #defbe3;
+  padding: 0.72rem 0.8rem;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #6cff9b;
+  box-shadow: 0 0 0 3px rgba(90, 255, 160, 0.2);
+}
+
+.login-card button {
+  margin-top: 0.6rem;
+  padding: 0.78rem 1rem;
+  background: #05a14a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-card button:hover {
+  background: #1fae61;
+}
+
+.extra-row {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.extra-row a {
+  color: #a8ffb9;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.extra-row a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .login-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #159248;
+  }
+
+  .login-content {
+    padding: 1.2rem;
+  }
+}
